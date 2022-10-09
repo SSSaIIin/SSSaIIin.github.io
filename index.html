@@ -71,6 +71,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Linux" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/10/07/Linux/" class="article-date">
+  <time class="dt-published" datetime="2022-10-07T15:49:56.000Z" itemprop="datePublished">2022-10-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/10/07/Linux/">步入Linux的现代方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>“Linux是程序员的生产力“</p>
+<p>​	各位读者对于操作系统并不是很陌生，目前市面上的主流电脑，除MacBook外一般出厂预装有Windows11系统。如果想体验Linux，一般有安装双系统和使用虚拟机两种方法，下面简单介绍第二种：</p>
+</blockquote>
+<hr>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>一、前言</p>
+<p>二、VMware Workstation Pro的安装</p>
+<p>三、Ubuntu的安装</p>
+<hr>
+<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>​	既然想要使用Linux还是要对其有个简要的了解，前身UNIX及具体的发展历史这里不做具体介绍。</p>
+<p>​	 通常情况下，Linux被打包成供个人计算机和服务器使用的发行版，主流的Linux发行版包括Debian（及其派生版本Ubuntu、Linux Mint）、Fedora（及其相关版本Red Hat Enterprise Linux、CentOS）和openSUSE等。当在虚拟机上安装时，若找不到完全相同的版本，可选择相近版本作为替代。</p>
+<p>​	个人较多使用的是CentOS及Ubuntu,本篇博客选择Ubuntu（<del>因为编者电脑里已经有CentOS了bushi</del>)</p>
+<hr>
+<h2 id="二、VMware-Workstation-Pro的安装"><a href="#二、VMware-Workstation-Pro的安装" class="headerlink" title="二、VMware Workstation Pro的安装"></a>二、VMware Workstation Pro的安装</h2><p>（如果有其他虚拟机，可跳过）</p>
+<h4 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1.下载安装包"></a>1.下载安装包</h4><p>​		官网链接：<a target="_blank" rel="noopener" href="https://www.vmware.com/cn.html">VMware 中国 - 交付面向企业的数字化基础 | CN</a></p>
+<h4 id="2-安装后激活"><a href="#2-安装后激活" class="headerlink" title="2.安装后激活"></a>2.安装后激活</h4><p>​		这里提供一个VM16的密钥：ZF3R0-FHED2-M80TY-8QYGC-NPKYF</p>
+<hr>
+<h2 id="三、Ubuntu的安装"><a href="#三、Ubuntu的安装" class="headerlink" title="三、Ubuntu的安装"></a>三、Ubuntu的安装</h2><h4 id="1-点击创建新的虚拟机"><a href="#1-点击创建新的虚拟机" class="headerlink" title="1.点击创建新的虚拟机"></a>1.点击创建新的虚拟机</h4><h4 id="2-硬件兼容性选择：Workstation-16-2-x"><a href="#2-硬件兼容性选择：Workstation-16-2-x" class="headerlink" title="2.硬件兼容性选择：Workstation 16.2.x"></a>2.硬件兼容性选择：Workstation 16.2.x</h4><h4 id="3-选择：稍后安装系统"><a href="#3-选择：稍后安装系统" class="headerlink" title="3.选择：稍后安装系统"></a>3.选择：稍后安装系统</h4><h4 id="4-点击-Linux-L-，在版本中找到-Ubuntu-64位"><a href="#4-点击-Linux-L-，在版本中找到-Ubuntu-64位" class="headerlink" title="4.点击 Linux(L)，在版本中找到 Ubuntu 64位"></a>4.点击 Linux(L)，在版本中找到 Ubuntu 64位</h4><h4 id="5-设置你的虚拟机名称及储存位置"><a href="#5-设置你的虚拟机名称及储存位置" class="headerlink" title="5.设置你的虚拟机名称及储存位置"></a>5.设置你的虚拟机名称及储存位置</h4><h4 id="6-根据你的电脑性能配置处理器数量"><a href="#6-根据你的电脑性能配置处理器数量" class="headerlink" title="6.根据你的电脑性能配置处理器数量"></a>6.根据你的电脑性能配置处理器数量</h4><h4 id="7-为虚拟机分配内存"><a href="#7-为虚拟机分配内存" class="headerlink" title="7.为虚拟机分配内存"></a>7.为虚拟机分配内存</h4><h4 id="8-添加网络类型"><a href="#8-添加网络类型" class="headerlink" title="8.添加网络类型"></a>8.添加网络类型</h4><p>​		大部分教程选择的是NAT，可以有效避免IP冲突。但由编者个人经历可知，校园网貌似只能用桥接模式（存疑）。</p>
+<h4 id="9-一路next后选择磁盘位置"><a href="#9-一路next后选择磁盘位置" class="headerlink" title="9.一路next后选择磁盘位置"></a>9.一路next后选择磁盘位置</h4><h4 id="10-点击自定义硬件（十分重要）"><a href="#10-点击自定义硬件（十分重要）" class="headerlink" title="10.点击自定义硬件（十分重要）"></a>10.点击自定义硬件（十分重要）</h4><p>​		在IDE一栏中，选择使用ISO映像文件，找到你的Ubuntu安装包。</p>
+<p><em><strong>按下完成，再经历漫长的等待时间后就可以使用Linux了哦</strong></em></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/10/07/Linux/" data-id="cl913fom3000014w2fyh7abwe" data-title="步入Linux的现代方法" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/10/07/hello-world/" class="article-date">
@@ -110,65 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/07/hello-world/" data-id="cl913a5ai00017ww29b2l410b" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Linux" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/09/30/Linux/" class="article-date">
-  <time class="dt-published" datetime="2022-09-30T15:49:56.000Z" itemprop="datePublished">2022-09-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/09/30/Linux/">步入Linux的现代方法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>“Linux是程序员的生产力“</p>
-<p>​	各位读者对于操作系统并不是很陌生，目前市面上的主流电脑，除MacBook外一般出厂预装有Windows11系统。如果想体验Linux，一般有安装双系统和使用虚拟机两种方法，下面简单介绍第二种：</p>
-</blockquote>
-<hr>
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>[一、前言]</p>
-<p>二、VMware Workstation Pro的安装</p>
-<p>三、Ubuntu的安装</p>
-<hr>
-<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>​	既然想要使用Linux还是要对其有个简要的了解，前身UNIX及具体的发展历史这里不做具体介绍。</p>
-<p>​	 通常情况下，Linux被打包成供个人计算机和服务器使用的发行版，主流的Linux发行版包括Debian（及其派生版本Ubuntu、Linux Mint）、Fedora（及其相关版本Red Hat Enterprise Linux、CentOS）和openSUSE等。当在虚拟机上安装时，若找不到完全相同的版本，可选择相近版本作为替代。</p>
-<p>​	个人较多使用的是CentOS及Ubuntu,本篇博客选择Ubuntu（<del>因为编者电脑里已经有CentOS了bushi</del>)</p>
-<hr>
-<h2 id="二、VMware-Workstation-Pro的安装"><a href="#二、VMware-Workstation-Pro的安装" class="headerlink" title="二、VMware Workstation Pro的安装"></a>二、VMware Workstation Pro的安装</h2><p>（如果有其他虚拟机，可跳过）</p>
-<h4 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1.下载安装包"></a>1.下载安装包</h4><p>​		官网链接：<a target="_blank" rel="noopener" href="https://www.vmware.com/cn.html">VMware 中国 - 交付面向企业的数字化基础 | CN</a></p>
-<h4 id="2-安装后激活"><a href="#2-安装后激活" class="headerlink" title="2.安装后激活"></a>2.安装后激活</h4><p>​		这里提供一个VM16的密钥：ZF3R0-FHED2-M80TY-8QYGC-NPKYF</p>
-<hr>
-<h2 id="三、Ubuntu的安装"><a href="#三、Ubuntu的安装" class="headerlink" title="三、Ubuntu的安装"></a>三、Ubuntu的安装</h2><h4 id="1-点击创建新的虚拟机"><a href="#1-点击创建新的虚拟机" class="headerlink" title="1.点击创建新的虚拟机"></a>1.点击创建新的虚拟机</h4><h4 id="2-硬件兼容性选择：Workstation-16-2-x"><a href="#2-硬件兼容性选择：Workstation-16-2-x" class="headerlink" title="2.硬件兼容性选择：Workstation 16.2.x"></a>2.硬件兼容性选择：Workstation 16.2.x</h4><h4 id="3-选择：稍后安装系统"><a href="#3-选择：稍后安装系统" class="headerlink" title="3.选择：稍后安装系统"></a>3.选择：稍后安装系统</h4><h4 id="4-点击-Linux-L-，在版本中找到-Ubuntu-64位"><a href="#4-点击-Linux-L-，在版本中找到-Ubuntu-64位" class="headerlink" title="4.点击 Linux(L)，在版本中找到 Ubuntu 64位"></a>4.点击 Linux(L)，在版本中找到 Ubuntu 64位</h4><h4 id="5-设置你的虚拟机名称及储存位置"><a href="#5-设置你的虚拟机名称及储存位置" class="headerlink" title="5.设置你的虚拟机名称及储存位置"></a>5.设置你的虚拟机名称及储存位置</h4><h4 id="6-根据你的电脑性能配置处理器数量"><a href="#6-根据你的电脑性能配置处理器数量" class="headerlink" title="6.根据你的电脑性能配置处理器数量"></a>6.根据你的电脑性能配置处理器数量</h4><h4 id="7-为虚拟机分配内存"><a href="#7-为虚拟机分配内存" class="headerlink" title="7.为虚拟机分配内存"></a>7.为虚拟机分配内存</h4><h4 id="8-添加网络类型"><a href="#8-添加网络类型" class="headerlink" title="8.添加网络类型"></a>8.添加网络类型</h4><p>​		大部分教程选择的是NAT，可以有效避免IP冲突。但由编者个人经历可知，校园网貌似只能用桥接模式（存疑）。</p>
-<h4 id="9-一路next后选择磁盘位置"><a href="#9-一路next后选择磁盘位置" class="headerlink" title="9.一路next后选择磁盘位置"></a>9.一路next后选择磁盘位置</h4><h4 id="10-点击自定义硬件（十分重要）"><a href="#10-点击自定义硬件（十分重要）" class="headerlink" title="10.点击自定义硬件（十分重要）"></a>10.点击自定义硬件（十分重要）</h4><p>​		在IDE一栏中，选择使用ISO映像文件，找到你的Ubuntu安装包。</p>
-<p><em><strong>按下完成，再经历漫长的等待时间后就可以使用Linux了哦</strong></em></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/30/Linux/" data-id="cl913a5ae00007ww2e7saferk" data-title="步入Linux的现代方法" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/10/07/hello-world/" data-id="cl913fom6000114w273ek0pwz" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -198,7 +198,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li></ul>
     </div>
   </div>
 
@@ -211,11 +211,11 @@
       <ul>
         
           <li>
-            <a href="/2022/10/07/hello-world/">Hello World</a>
+            <a href="/2022/10/07/Linux/">步入Linux的现代方法</a>
           </li>
         
           <li>
-            <a href="/2022/09/30/Linux/">步入Linux的现代方法</a>
+            <a href="/2022/10/07/hello-world/">Hello World</a>
           </li>
         
       </ul>
